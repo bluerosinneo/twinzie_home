@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+// import { Route, Switch } from 'react-router-dom';
+import Kwitter from './components/kwitter/Kwitter';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Navigation />
+      <Switch>
+          <Route exact path="/" component={Welcome} />
+          <Route exact path="/messages" component={Welcome} />
+      </Switch> */}
+      <Kwitter />
     </div>
   );
 }
